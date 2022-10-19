@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "toolpage:start": "nx run fourdim-tool-page:start",
-    "lib:build": "nx run-many --target=build --projects=@fourdimtool/tsconfig,@fourdimtool/web3-abi,@fourdimtool/web3-parser,@fourdimtool/web3-core,@fourdimtool/web3-react --parallel"
+    "lib:build": "nx run-many --target=build --projects=@fourdimtool/tsconfig,@fourdimtool/web3-abi,@fourdimtool/web3-parser,@fourdimtool/web3-core,@fourdimtool/web3-react",
+    "postinstall": "pnpm run lib:build"
   },
   "eslintConfig": {
     "extends": [
