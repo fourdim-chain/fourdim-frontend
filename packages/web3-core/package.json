@@ -1,0 +1,38 @@
+{
+  "name": "@fourdimtool/web3-core",
+  "version": "0.0.1-alpha.12+8901835",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint src test",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "start": "tsup src/index.ts --format esm,cjs --watch --dts",
+    "prepublishOnly": "yarn run build"
+  },
+  "dependencies": {
+    "@fourdimtool/web3-abi": "workspace:*",
+    "@fourdimtool/web3-parser": "workspace:*",
+    "evm": "^0.2.0",
+    "ethers": "^5.7.1",
+    "lodash": "^4.17.21",
+    "fourdim-web3-hooks": "^0.0.1-alpha.12",
+    "axios": "^0.24.0"
+  },
+  "devDependencies": {
+    "@fourdimtool/tsconfig": "workspace:*",
+    "tsup": "^5.10.1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "tsup": {
+    "clean": true
+  },
+  "gitHead": "8901835b09b6186a933fdf89996f3de4fcbf7cdb"
+}
