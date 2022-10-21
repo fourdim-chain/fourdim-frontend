@@ -1,6 +1,6 @@
 {
-  "name": "@fourdimtool/web3-core",
-  "version": "0.0.1-alpha.12+8901835",
+  "name": "@fourdimchain/web3-core",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -16,16 +16,18 @@
     "prepublishOnly": "yarn run build"
   },
   "dependencies": {
-    "@fourdimtool/web3-abi": "workspace:*",
-    "@fourdimtool/web3-parser": "workspace:*",
-    "evm": "^0.2.0",
+    "@fourdimchain/web3-abi": "workspace:*",
+    "@fourdimchain/web3-parser": "workspace:*",
+    "@types/lodash": "^4.14.186",
+    "axios": "^0.24.0",
     "ethers": "^5.7.1",
-    "lodash": "^4.17.21",
+    "evm": "^0.2.0",
     "fourdim-web3-hooks": "^0.0.1-alpha.12",
-    "axios": "^0.24.0"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@fourdimtool/tsconfig": "workspace:*",
+    "@fourdimchain/tsconfig": "workspace:*",
+    "@types/node": "^18.0.0",
     "tsup": "^5.10.1"
   },
   "engines": {

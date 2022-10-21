@@ -1,11 +1,16 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
   "plugins": [
     "prettier",
     "@typescript-eslint"
   ],
   "extends": [
-    "airbnb-typescript",
-    "react-app",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -17,45 +22,26 @@
   "settings": {
     "import/resolver": {
       "typescript": {
-        "alwaysTryTypes": true
+        "alwaysTryTypes": false,
+        "project": "packages/*/tsconfig.json"
       }
     }
   },
   "rules": {
-    "react/jsx-key": 2,
-    "import/no-duplicates": 1,
-    "react/self-closing-comp": 1,
-    "@typescript-eslint/no-shadow": 0,
-    "import/no-useless-path-segments": 1,
-    "import/no-extraneous-dependencies": 0,
-    "@typescript-eslint/naming-convention": 0,
-    "object-curly-spacing": [
-      1,
-      "always"
-    ],
-    "@typescript-eslint/no-unused-vars": [
-      1,
-      {
-        "vars": "all",
-        "args": "none"
-      }
-    ],
-    "prefer-destructuring": [
-      1,
-      {
-        "object": true,
-        "array": false
-      }
-    ],
-    "import/extensions": [
+    "import/order": ["error", { "newlines-between": "always" }],
+    "import/no-named-as-default-member": "off", 
+    "import/no-unresolved": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/consistent-type-definitions": [
       "error",
-      "ignorePackages",
-      {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }
-    ]
+      "type"
+    ],
+    "@typescript-eslint/no-implicit-any-catch": [
+      "error",
+      { "allowExplicitAny": true }
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-interface": "off"
   }
 }

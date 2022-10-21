@@ -24,10 +24,10 @@
 - [web3-block-helper](https://github.com/chongqiangchen/web3-block-helper)
 
 > 使用monorepo方式，将会将上面面部分内容移入当前仓库下，方便维护 (进行中)
-- [@fourdimtool/web3-abi]()
-- [@fourdimtool/web3-parser]()
-- [@fourdimtool/web3-core]()
-- [@fourdimtool/web3-react]()
+- [@fourdimchain/web3-abi]()
+- [@fourdimchain/web3-parser]()
+- [@fourdimchain/web3-core]()
+- [@fourdimchain/web3-react]()
 
 ### 构建计划
 

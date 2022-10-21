@@ -1,6 +1,6 @@
 {
-  "name": "@fourdimtool/tsconfig",
-  "version": "0.0.1-alpha.12+8901835",
+  "name": "@fourdimchain/tsconfig",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "build": "echo 'nothing to build'"
@@ -12,6 +12,9 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "nx": {
+    "ignore": true
   },
   "gitHead": "8901835b09b6186a933fdf89996f3de4fcbf7cdb"
 }

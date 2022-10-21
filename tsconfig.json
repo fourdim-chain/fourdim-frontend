@@ -1,5 +1,5 @@
 {
-  "extends": "./packages/tsconfig/react-lib.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "baseUrl": ".",
     "strictNullChecks": false,
@@ -7,14 +7,8 @@
     "noFallthroughCasesInSwitch": true,
     "downlevelIteration": true,
     "resolveJsonModule": true,
-    "target": "es5"
+    "moduleResolution": "NodeNext"
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "**/*.json"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["*.ts", "*.tsx", "**/*.json", "nx.json.tmp;"],
+  "exclude": ["node_modules"]
 }

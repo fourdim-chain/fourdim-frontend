@@ -1,6 +1,6 @@
 {
-  "name": "@fourdimtool/web3-react",
-  "version": "0.0.1-alpha.12+8901835",
+  "name": "@fourdimchain/web3-react",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -17,15 +17,15 @@
     "prepublishOnly": "yarn run build"
   },
   "dependencies": {
-    "@fourdimtool/web3-abi": "workspace:*",
-    "@fourdimtool/web3-core": "workspace:*",
-    "@fourdimtool/web3-parser": "workspace:*",
+    "@fourdimchain/web3-abi": "workspace:*",
+    "@fourdimchain/web3-core": "workspace:*",
+    "@fourdimchain/web3-parser": "workspace:*",
     "evm": "^0.2.0",
     "lodash": "^4.17.21",
     "ethers": "^5.4.6"
   },
   "devDependencies": {
-    "@fourdimtool/tsconfig": "workspace:*",
+    "@fourdimchain/tsconfig": "workspace:*",
     "tsup": "^5.10.1"
   },
   "engines": {
