@@ -23,7 +23,7 @@
     "changeset": "changeset",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
-    "postinstall": "pnpm run lib:build",
+    "postinstall": "pnpm run build:lib",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "pre-commit": "lint-staged --no-stash",
     "clean": "rimraf node_modules **/node_modules"

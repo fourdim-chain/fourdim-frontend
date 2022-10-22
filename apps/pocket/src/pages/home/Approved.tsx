@@ -6,13 +6,9 @@ import Page from '../../components/Page';
 import { useAccount } from 'wagmi';
 import useRefreshAccountRequest from '@/pages/home/hooks/useRefreshAccountRequest';
 import HeaderBreadcrumbs from '@/components/HeaderBreadcrumbs';
-import UserTokenList from './sections/usedTokenList/UserTokenList';
+import ApprovedList from './sections/approvedList/ApprovedList';
 
-// ----------------------------------------------------------------------
-
-// ----------------------------------------------------------------------
-
-export default function UserList() {
+export default function Approved() {
   const { themeStretch } = useSettings();
   const { address } = useAccount();
 
@@ -28,9 +24,9 @@ export default function UserList() {
   return (
     <Page title="User: List">
       <Container maxWidth={themeStretch ? false : 'lg'}>
-        <HeaderBreadcrumbs heading="账户货币数据" links={[{ name: '货币数据' }]} />
+        <HeaderBreadcrumbs heading="账户授权数据" links={[{ name: '授权数据' }]} />
 
-        <UserTokenList />
+        <ApprovedList />
       </Container>
     </Page>
   );

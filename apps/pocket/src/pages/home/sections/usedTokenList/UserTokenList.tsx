@@ -19,8 +19,8 @@ import { AccountUsedTokenListQuery } from '@/atoms/account';
 import { useEffect, useMemo, useState } from 'react';
 import useTabs from '@/hooks/useTabs';
 import applySortFilter from '@/pages/home/utils/applySortFilter';
-import TokenListTableRow from '@/pages/home/sections/UserTableRow';
-import TokenListTableToolbar from '@/pages/home/sections/UserTableToolbar';
+import TokenListTableRow from './UserTableRow';
+import TokenListTableToolbar from './UserTableToolbar';
 
 const STATUS_OPTIONS = ['全部'];
 
